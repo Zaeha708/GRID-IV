@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid I.V – AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ai-container">
+    <h1 class="ai-title">🧠 Grid I.V</h1>
+
+    <div class="output-box" id="output">
+      Say: <em>“Hey Grid”</em> to activate.
+    </div>
+
+    <div class="wave-container" id="wave">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="getLocation()">📍 Locate</button>
+      <button onclick="startCamera()">📷 Scan</button>
+    </div>
+
+    <video id="camera" autoplay playsinline muted></video>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
